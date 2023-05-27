@@ -1,0 +1,126 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .clock {
+    background: #000;
+    color: #ffd700;
+    border: 4px solid #ffd700;
+    box-shadow: 0 0 20px rgba(255, 234, 0, 0.887);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+   .hour-markers {
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background: #ffd700;
+    transform-origin: bottom center;
+    top: 10px;
+  }
+
+  .hour-markers:nth-child(1) {
+    transform: rotate(30deg);
+  }
+
+  .hour-markers:nth-child(2) {
+    transform: rotate(60deg);
+  }
+
+  .hour-markers:nth-child(3) {
+    transform: rotate(90deg);
+  }
+
+  .hour-markers:nth-child(4) {
+    transform: rotate(120deg);
+  }
+
+  .hour-markers:nth-child(5) {
+    transform: rotate(150deg);
+  }
+
+  .hour-markers:nth-child(6) {
+    transform: rotate(180deg);
+  }
+
+  .hour-markers:nth-child(7) {
+    transform: rotate(210deg);
+  }
+
+  .hour-markers:nth-child(8) {
+    transform: rotate(240deg);
+  }
+
+  .hour-markers:nth-child(9) {
+    transform: rotate(270deg);
+  }
+
+  .hour-markers:nth-child(10) {
+    transform: rotate(300deg);
+  }
+
+  .hour-markers:nth-child(11) {
+    transform: rotate(330deg);
+  }
+
+  .hour-markers:nth-child(12) {
+    transform: rotate(360deg);
+  } 
+
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    background: #fff;
+    transform-origin: bottom center;
+    transition-timing-function: steps(1, end);
+    transition-duration: 0.5s;
+  }
+
+  .hour-hand {
+    width: 6px;
+    height: 70px;
+    top: 80px;
+    left: 147px;
+    border-radius: 6px 6px 0 0;
+    transform: rotate(0deg);
+  }
+
+  .minute-hand {
+    width: 4px;
+    height: 100px;
+    top: 50px;
+    left: 148px;
+    border-radius: 4px 4px 0 0;
+    transform: rotate(0deg);
+  }
+
+  .second-hand {
+    width: 2px;
+    height: 120px;
+    top: 30px;
+    left: 149px;
+    background: #f00;
+    border-radius: 2px 2px 0 0;
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+
+  .digital-clock {
+    color: #ffd700;
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+  }
